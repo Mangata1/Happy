@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html>
 <head>
     <meta charset="utf-8" />
@@ -58,6 +59,7 @@
             z-index: 999;
             height: 100px;
             margin-top: -140px;
+		
         }
 
         #title {
@@ -66,7 +68,7 @@
             font-size: 30px;
             text-align: center;
             line-height: 30px;
-            color:#242a30;
+            
         }
 
         #unicorn {
@@ -74,17 +76,17 @@
 			font-family:"方正喵呜体";
             font-weight: 700;
             font-size: 30px;
-            background: #d9e0e7;
         }
 
         #pick {
 			position: absolute;
-            width: 120px;
-            height: 40px;
+            width: 70px;
+            height: 30px;
 			bottom: 250px;
 			left: 880px;
            
-            background: #666666;
+            background: rgba(0,0,0,0);
+			border-width: 0;
             color: #fff;
             
         }
@@ -184,11 +186,17 @@
         }
 		#text{
 		position: absolute;
-		bottom: 2px;
-		left: 2px;
-            border: 1px solid rgba(0,0,0,.2);
-            border-radius: 8px;
-            background: #fff;
+		bottom: 1px;
+		left: 1px;
+        
+		}
+		#btn{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: rgba(0,0,0,0); 
+		border-width: 0;
+		color: white;
 		}
     </style>
 </head>
@@ -199,7 +207,7 @@
     <article id="martix">
         <p id="title">送可爱的你一件礼物!</p>
         <p id="unicorn"></p>
-        <input type="button" id="pick" value="Go Go Go!">
+        <input type="button" id="pick" value="Go Go!">
         <div class="hide" id="content">
             <textarea id="book" rows="9" cols="53">
             把想你的时光，描写成熵🐤 要相信美好的都在路上🐰 你已经做的很好了，我把这句话藏在这里，在你最需要勇气的时候，悄悄说给你听🦄 你一本正经又凶巴巴的时候很可爱🐰 抬头看一下吧，风也温柔，雨也温柔💌 总有人带着坚定和欣喜去拥抱你🌿 天空很黑，星星却很亮，所以没关系的，你是我眼中最亮的那颗星。🍰 希望我身上微博的光，带你穿越漫长的黑夜👛 你总是看到自己的小瑕疵，可你别忘了，你一直闪闪发光，即便是最差的情况下，也有一个人一直相信👝 不要忘记想要去潜水时候的好心情呀💌 很庆幸我比任何人都先一步发现你的可爱🏩 你是我生活中的一味阿斯巴甜，不长胖的那种💐 好面子的你，其实在我眼里一直是最好的💍 欢喜就是每天很累，我仍期待十一点半后的时光👗 在我这里，你不必成为小大人👝 你一本正经去努力去追求的时候好酷🎁 我说加油呀（官方吐槽：谁说我不会安慰人），不是觉得你不够优秀，而是你不止于此，即使你一直在天上，令我仰望🐹 你是一个酷酷女孩，不许传播坏情绪💐 那些糟糕的时刻我们都会忘记，唯一难忘的是陪你走过的漫漫长路🎁 现在能够见面该是多好呀！多想在你的耳畔说一句 你很棒！🎁 我每时每刻都很挂念你，麻烦你替我照顾好自己📚 不管发生什么，我愿意一直相信你😀 大雾终将退去，而我遇见了你💍 你藏在我的心里🏩 遇见你是故事的开始😋 聪明、独立、善良、坚强、感恩、凶哒哒、健康、爱睡、勇敢的女孩🦄 我把一生的耐心给你😀 我愿意用最朴素的方式陪着你去证明这世界上的你很棒🥕 讲道理，我还是偏心你👛 我对所有人说安，独独对你说晚安🛌🏼 以后一起养一只猫儿子吧🐈  
@@ -283,8 +291,10 @@
         })
     </script>
 			<div id="text">
-		<!--end text-->
-		<iframe  allow="autoplay" src="风吹着我向你跑来.mp3"width=120 height=58 hspace="100" vspace="150"  ></iframe>
+			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://music.163.com/outchain/player?type=2&id=1369998432&auto=1&height=32"></iframe>
+		<!--audio id="playaudio" src="src="http://music.163.com/outchain/player?type=2&id=1369998432&auto=1&height=66" loop="true"></audio-->
+    <!--button onclick="document.getElementById('playaudio').play();this.style.visibility='hidden';" id="btn">Play</button-->
+		<!--iframe  allow="autoplay" src="风吹着我向你跑来.mp3"width=120 height=58 hspace="100" vspace="150"  ></iframe-->
 			</div>
 </body>
 </html>
